@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\DB;
 
 require_once 'app/helpers.php';
 
-//uses(\Illuminate\Foundation\Testing\Refreshdatabase::class);
+uses(\Illuminate\Foundation\Testing\Refreshdatabase::class);
 
 test('validateYesterdayDataExist returns true when yesterday data exists', function () {
     DB::table('some_table')->insert([

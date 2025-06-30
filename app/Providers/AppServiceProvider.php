@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Domain\Contracts\SomeTableRepositoryInterface;
+use App\Infrastructure\Persistence\SomeTableRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(
+            SomeTableRepositoryInterface::class,
+            SomeTableRepository::class
+        );
     }
 
     /**
