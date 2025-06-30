@@ -11,7 +11,6 @@ class DataValidator
 
     public function validateYesterdayDataExist(DateTime $today): bool
     {
-        $yesterday = (clone $today)->modify('-1 day');
-        return $this->repo->yesterdayDataExists($yesterday);
+        return $this->repo->yesterdayDataExists($today);
     }
 }
