@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// route: callback function
+// route: Callback Functions and Route::view()
 Route::get('/hello', function () {
     return 'Hello World';
 });
@@ -15,10 +15,10 @@ Route::get('/hello', function () {
 // route: view (resources/views/learn/learn.blade.php)
 Route::view('/learn', 'learn.learn');
 
-// route: controller method
+// route: Routing to a Single Controller Method
 Route::get('/about', [SimpleController::class, 'aboutMethod']);
 
-// route parameter
+// Route Parameters
 Route::get('/simple/{id}', function ($id) {
     return 'Simple ' . $id;
 });
@@ -26,10 +26,10 @@ Route::get('/simple/{id}', function ($id) {
 // route parameter ke controller
 Route::get('/show/{sebuahParam}', [SimpleController::class, 'showMethod']);
 
-// route name
+// Route Naming
 Route::get('/named', [SimpleController::class, 'namedMethod'])->name('named');
 
-// route group (akses di /admin/grup dan /admin/kelompok)
+// Route Groups (akses di /admin/grup dan /admin/kelompok)
 Route::prefix('admin')->group(function () {
     Route::get('/grup', function () {
         return 'Admin Grup';
