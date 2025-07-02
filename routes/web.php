@@ -38,3 +38,6 @@ Route::prefix('admin')->group(function () {
         return 'Admin Kelompok';
     });
 });
+
+// Displaying Variables in Blade
+Route::get('/myblade', [SimpleController::class, 'myBladeMethod']);

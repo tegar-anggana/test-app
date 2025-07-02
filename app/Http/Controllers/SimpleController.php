@@ -20,4 +20,9 @@ class SimpleController extends Controller
     {
         return view('simple.named');
     }
+
+    public function myBladeMethod()
+    {
+        return view('greeting', ['nama' => 'Euy']);
+    }
 }
