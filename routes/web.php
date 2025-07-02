@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MyAuthController;
 use App\Http\Controllers\SimpleController;
 use Illuminate\Support\Facades\Route;
 
@@ -51,3 +52,11 @@ Route::get('/myloop', [SimpleController::class, 'myLoopMethod']);
 Route::get('/myhome', [SimpleController::class, 'myHomeMethod']);
 
 Route::get('/mycomponent', [SimpleController::class, 'myComponentMethod']);
+
+Route::get('/login', [MyAuthController::class, 'showLoginForm'])->name('login');
+
+Route::post('/login', [MyAuthController::class, 'login']);
+
+Route::get('/mydashboard', [MyAuthController::class, 'dashboard'])->middleware('auth');
+
+Route::post('/logout', [MyAuthController::class, 'logout'])->name('logout');
