@@ -44,3 +44,6 @@ Route::get('/myblade', [SimpleController::class, 'myBladeMethod']);
 
 // Blade If-Else & Conditionals
 Route::get('/profile', [SimpleController::class, 'profileMethod']);
+
+// Blade Loops
+Route::get('/myloop', [SimpleController::class, 'myLoopMethod']);

@@ -40,4 +40,17 @@ class SimpleController extends Controller
             'hobbies' => $hobbies,
         ]);
     }
+
+    public function myLoopMethod()
+    {
+        $users = [
+            ['name' => 'John', 'age' => 20],
+            ['name' => 'Jane', 'age' => 21],
+            ['name' => 'Jenny', 'age' => 22],
+        ];
+
+        $pengguna = [];
+
+        return view('myloop', ['users' => $users, 'pengguna' => $pengguna]);
+    }
 }
