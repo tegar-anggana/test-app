@@ -47,3 +47,5 @@ Route::get('/profile', [SimpleController::class, 'profileMethod']);
 
 // Blade Loops
 Route::get('/myloop', [SimpleController::class, 'myLoopMethod']);
+
+Route::get('/myhome', [SimpleController::class, 'myHomeMethod']);

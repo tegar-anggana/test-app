@@ -53,4 +53,8 @@ class SimpleController extends Controller
 
         return view('myloop', ['users' => $users, 'pengguna' => $pengguna]);
     }
+
+    public function myHomeMethod(){
+        return view('units.home');
+    }
 }
