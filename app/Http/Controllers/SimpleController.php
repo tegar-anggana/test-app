@@ -57,4 +57,9 @@ class SimpleController extends Controller
     public function myHomeMethod(){
         return view('units.home');
     }
+
+    public function myComponentMethod()
+    {
+        return view('component_usage.index');
+    }
 }

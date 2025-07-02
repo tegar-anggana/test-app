@@ -49,3 +49,5 @@ Route::get('/profile', [SimpleController::class, 'profileMethod']);
 Route::get('/myloop', [SimpleController::class, 'myLoopMethod']);
 
 Route::get('/myhome', [SimpleController::class, 'myHomeMethod']);
+
+Route::get('/mycomponent', [SimpleController::class, 'myComponentMethod']);
