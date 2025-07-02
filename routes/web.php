@@ -41,3 +41,6 @@ Route::prefix('admin')->group(function () {
 
 // Displaying Variables in Blade
 Route::get('/myblade', [SimpleController::class, 'myBladeMethod']);
+
+// Blade If-Else & Conditionals
+Route::get('/profile', [SimpleController::class, 'profileMethod']);

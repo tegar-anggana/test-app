@@ -25,4 +25,19 @@ class SimpleController extends Controller
     {
         return view('greeting', ['nama' => 'Euy']);
     }
+
+    public function profileMethod()
+    {
+        $age = 20;
+        $address = 'Jl. Merdeka No. 123';
+        $nickname = ''; // untuk contoh @empty
+        $hobbies = ['Reading', 'Swimming', 'Traveling'];
+
+        return view('profile', [
+            'age' => $age,
+            'address' => $address,
+            'nickname' => $nickname,
+            'hobbies' => $hobbies,
+        ]);
+    }
 }
