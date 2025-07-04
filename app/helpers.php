@@ -15,3 +15,8 @@ function validateStringLength(string $input): bool
 {
     return strlen($input) > 3;
 }
+
+function sum(int $a, int $b): int
+{
+    return $a + $b;
+}
