@@ -12,8 +12,8 @@ it('returns correct sum when one number is negative', function () {
 
 it('returns correct sum when both numbers are zero', function () {
     expect(sum(0, 0))->toBe(0, "hasil sum(0,0) seharusnya 0");
-})
-    ->skip('Tes ini gagal di CI karena perbedaan versi PHP, akan diperbaiki setelah upgrade');
+});
+    //->skip('Tes ini gagal di CI karena perbedaan versi PHP, akan diperbaiki setelah upgrade');
 
 it('tests various sum scenarios', function () {
     expect(sum(1, 2))->toBe(3);
