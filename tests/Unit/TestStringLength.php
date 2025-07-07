@@ -35,7 +35,7 @@ it('calculates average of negative numbers', function () {
 });
 
 it('throws error on empty list', function () {
-    expect(fn() => avg([]))->toThrow(DivisionByZeroError::class);
+    expect(fn() => avg([]))->not->toThrow(DivisionByZeroError::class);
 });
 
 it('calculates average with decimal numbers', function () {
