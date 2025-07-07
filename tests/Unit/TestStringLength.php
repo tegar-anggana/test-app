@@ -11,3 +11,8 @@ test('validateStringLength return false ketika input length <= 3', function () {
     $result = validateStringLength('Ma');
     expect($result)->toBeFalse();
 });
+
+it('return false ketika input length == 3', function () {
+    $result = validateStringLength('Mak');
+    expect($result)->toBeFalse();
+});
