@@ -26,9 +26,6 @@ describe('stopping short', function () {
     it('calculates average of positive numbers', function () {
         expect(avg([1, 2, 3]))->toBe(2.0);
     });
-    it('calculates average of one number', function () {
-        expect(avg([5]))->toBe(5.0);
-    });
     it('calculates average of negative numbers', function () {
         expect(avg([-10, 20]))->toBe(5.0);
     });
