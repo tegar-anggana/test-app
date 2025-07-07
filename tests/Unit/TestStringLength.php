@@ -2,7 +2,7 @@
 
 require_once 'app/helpers.php';
 
-test('validateStringLength return true ketika input length > 3', function () {
+it('validateStringLength return true ketika input length > 3', function () {
     $result = validateStringLength('Makan');
     expect($result)->toBeTrue();
 });
