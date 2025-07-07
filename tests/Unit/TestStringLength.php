@@ -7,7 +7,7 @@ it('validateStringLength return true ketika input length > 3', function () {
     expect($result)->toBeTrue();
 });
 
-test('validateStringLength return false ketika input length <= 3', function () {
+it('validateStringLength return false ketika input length <= 3', function () {
     $result = validateStringLength('Ma');
     expect($result)->toBeFalse();
 });
