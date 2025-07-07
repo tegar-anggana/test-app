@@ -29,8 +29,8 @@ describe('stopping short', function () {
     it('calculates average of negative numbers', function () {
         expect(avg([-10, 20]))->toBe(5.0);
     });
-    it('throws error on empty list', function () {
-        expect(fn() => avg([]))->not->toThrow(DivisionByZeroError::class);
+    it('return 0.0 on empty list', function () {
+        expect(avg([]))->toBe(0.0);
     });
 });
 
