@@ -16,3 +16,8 @@ it('return false ketika input length == 3', function () {
     $result = validateStringLength('Mak');
     expect($result)->toBeFalse();
 });
+
+it('validate integer range > 5', function (){
+    $result = isIntegerInRange(5);
+    expect($result)->toBeTrue();
+});
