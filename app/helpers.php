@@ -27,5 +27,5 @@ function avg(array $nums): float {
 
 function isIntegerInRange(int $number): bool
 {
-    return $number > 5;
+    return $number >= 5;
 }
