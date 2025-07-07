@@ -20,3 +20,7 @@ function sum(int $a, int $b): int
 {
     return $a + $b;
 }
+
+function avg(array $nums): float {
+    return array_sum($nums) / count($nums);
+}
