@@ -21,3 +21,23 @@ it('validate integer range > 5', function (){
     $result = isIntegerInRange(5);
     expect($result)->toBeTrue();
 });
+
+it('calculates average of positive numbers', function () {
+    expect(avg([1, 2, 3]))->toBe(2.0);
+});
+
+it('calculates average of one number', function () {
+    expect(avg([5]))->toBe(5.0);
+});
+
+it('calculates average of negative numbers', function () {
+    expect(avg([-10, 20]))->toBe(5.0);
+});
+
+it('throws error on empty list', function () {
+    expect(fn() => avg([]))->toThrow(DivisionByZeroError::class);
+});
+
+it('calculates average with decimal numbers', function () {
+    expect(avg([1.5, 2.5, 3.5]))->toBe(2.5);
+});
