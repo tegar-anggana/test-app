@@ -24,3 +24,8 @@ function sum(int $a, int $b): int
 function avg(array $nums): float {
     return array_sum($nums) / count($nums);
 }
+
+function isIntegerInRange(int $number): bool
+{
+    return $number > 5;
+}
